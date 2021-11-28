@@ -1,0 +1,94 @@
+.chatPage {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    min-height: 100vh;
+    max-height: 100vh;
+    justify-content: space-between;
+}
+
+.chatPage__header {
+    width: 100%;
+    font-size: 1.3rem;
+    background-color: #0F0F0F;
+    display: flex;
+    padding: 15px 28px;
+    align-items: center;
+}
+
+.chatPage__avatar {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+.chatPage__username {
+    font-size: 1.3rem;
+    color: #D9D9D9;
+    font-weight: 600;
+}
+
+.chatPage__inputWrapper {
+    background-color: #3A3A3A;
+    padding: 16.5px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.chatPage__messageTextInput {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    width: 95%;
+    resize: none;
+    cursor: auto;
+    min-height: 36px;
+}
+
+.chatPage__messageTextInput::-webkit-scrollbar {
+    background-color: #444;
+    border-radius: 100px;
+    width: 10px;
+}
+
+.chatPage__messageTextInput::-webkit-scrollbar-thumb {
+    background-color: #1A1A1A;
+    border-radius: 100px;
+}
+
+.chatPage__messageTextInput:focus-visible {
+    outline: none;
+}
+
+.chatPage__sendMessageInput {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.chatPage__sendMessageImage {
+    cursor: pointer;
+}
+
+.chatPage__sendMessageImage_disabled path {
+    fill: #9B9B9B;
+    cursor: pointer;
+}
+
+.chatPage__messagesWrapper {
+    flex: 1 1 auto;
+    overflow-y: scroll;
+    padding: 35px 28px 26px;
+}
+
+.chatPage__messagesWrapper::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.chatPage__messagesWrapper::-webkit-scrollbar-thumb {
+    background-color: #111;
+    border-radius: 100px;
+}
